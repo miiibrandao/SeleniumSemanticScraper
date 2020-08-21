@@ -59,6 +59,7 @@ class Crawler:
 
     def update_search_parameters(self, input_search, input_pages):
         self.input_search = input_search
+        input_search.strip()
         self.input_pages = input_pages
 
     # extract the type of the article from the BibText cite text and returns it as a single word string
